@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptive Learning Platform</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { text-align: center; }
+    .card { border: 1px solid #ccc; padding: 15px; margin: 15px 0; border-radius: 10px; }
+    textarea, input, button { width: 100%; margin: 8px 0; padding: 8px; }
+    .progress { background: #eee; border-radius: 5px; overflow: hidden; }
+    .progress-bar { background: #4caf50; color: #fff; text-align: center; height: 20px; width: 60%; }
+  </style>
+</head>
+<body>
+
+  <h1>Adaptive Learning Platform</h1>
+
+  <div class="card">
+    <h2>📘 Upload Study Document</h2>
+    <input type="file">
+  </div>
+
+  <div class="card">
+    <h2>📊 Progress Analytics</h2>
+    <div class="progress">
+      <div class="progress-bar">60% Complete</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>🤖 AI Study Recommendation</h2>
+    <textarea placeholder="Your recommended topics will appear here..."></textarea>
+    <button onclick="showRecommendation()">Get Recommendation</button>
+  </div>
+
+  <script>
+    function showRecommendation() {
+      document.querySelector("textarea").value =
+        "✅ Focus on Chapter 3: Algorithms\n✅ Practice 5 coding problems daily\n✅ Revise key formulas for Unit Test";
+    }
+  </script>
+
+</body>
+</html>
